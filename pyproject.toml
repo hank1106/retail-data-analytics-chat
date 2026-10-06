@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-chat"
+version = "0.1.0"
+description = "AI-powered retail analytics chat system"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn>=0.24,<1",
+    "streamlit==1.36.0",
+    "httpx==0.25.2",
+]
+
+[project.optional-dependencies]
+test = ["pytest==7.4.3"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
