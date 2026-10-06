@@ -179,10 +179,19 @@ retail-chat/
 
 ## Screenshots
 
-Run the UI and API as above, then open the chat at
-http://localhost:8501. Suggested screenshots for the submission:
+The chat UI running locally against the seed database (every answer shows
+its parsed intent and entities in the “How I understood this” expander):
 
-1. Customer query (`How much has customer C10001 spent in total?`) with the
-   “How I understood this” expander open (shows intent + entities).
-2. Product query (`Which stores sell the product P1001?`).
-3. Business query (`Show me the top 5 products by revenue`).
+![Welcome and example queries](docs/screenshots/01-welcome.png)
+
+*Customer query* — `How much has customer C10001 spent in total?`:
+
+![Customer total-spent query](docs/screenshots/02-customer.png)
+
+*Product query* — `Which stores sell the product P1001?`:
+
+![Product stores query](docs/screenshots/03-product.png)
+
+*Business query* — `Show me the top 5 products by revenue`:
+
+![Top products query](docs/screenshots/04-business.png)
