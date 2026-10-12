@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Retail Data Analytics Chat</title>
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<main class="shell">
+  <header>
+    <h1>Retail Data Analytics Chat</h1>
+    <p class="sub">Ask about customers, products, or business metrics.</p>
+  </header>
+  <div id="log" class="log" aria-live="polite"></div>
+  <div class="chips" id="chips"></div>
+  <form id="form" class="form">
+    <input id="input" type="text" autocomplete="off"
+           placeholder="e.g. How much has customer C11111 spent in total?" />
+    <button type="submit">Send</button>
+  </form>
+  <p class="hint">Customer IDs are numbers (optional C prefix) · Product IDs are A, B, C, D</p>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
